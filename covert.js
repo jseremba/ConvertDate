@@ -5,7 +5,7 @@
 * For example, it should convert user entered date "12/31/2016" to "20161231" suitable for the API.
 */
 
-function ConvertsDate(userDate) { 
+function convertDate(userDate) { 
   userDate = new Date(userDate);
   y = userDate.getFullYear().toString();
   m = (userDate.getMonth() + 1).toString();
@@ -17,4 +17,4 @@ function ConvertsDate(userDate) {
    
 // keep this function call here 
 // to see how to enter arguments in JavaScript scroll down
-ConvertsDate(ConvertsDate()); 
+convertDate(convertDate()); 
